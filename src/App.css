@@ -1,0 +1,376 @@
+
+body{
+  background-color: lavenderblush;
+  font-family: 'Times New Roman', Times, serif;
+  }
+  .responsive-three-columns {
+    display:flex;
+    flex-wrap:wrap;
+    margin-left: 12%;
+  }
+  
+  /* columns */
+  .responsive-three-columns > * {
+    width:100%;
+    padding:1rem;
+  }
+  
+  /* tablet breakpoint */
+  @media (min-width:768px) {
+    .responsive-three-columns > * {
+        width:calc(100% / 3);
+    }
+  }
+  
+  .bg{
+  
+  
+   height: auto;
+  background: #E00800;
+  background: linear-gradient(135deg, #E00800, #E27D88);
+  }
+  .responsive-two-column-grid {
+    display:block;
+  }
+  
+  /* columns */
+  .responsive-two-column-grid > * {
+    padding:1rem;
+  }
+  
+  /* tablet breakpoint */
+  @media (min-width:768px) {
+    .responsive-two-column-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+  .logo{
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .logoText{
+    font-weight: bolder;
+    font-size: 30px;
+    color: #e82b41;
+  }
+
+  .tex{
+    display: flex;  /* Use flexbox to position elements */
+    align-items: center
+  }
+  .form-control{
+    width: 50%;
+  }
+  .jj{
+    display: block;
+    margin-left: 30%;
+  
+  }
+  .logo1{  background-color: #E00800;
+    border-radius: 4px;boxShadow: 'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px'
+  }
+  .nav{
+    font-size: 18px;
+  
+  }
+  .nav:hover{
+
+    background-color: yellow;
+    border-radius: 3px;
+  }
+  .responsive-two-column-grid {
+    display:block;
+}
+
+/* columns */
+.responsive-two-column-grid > * {
+    padding:1rem;
+}
+
+/* tablet breakpoint */
+@media (min-width:768px) {
+    .responsive-two-column-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.responsive-three-column-grid {
+  display:block;
+}
+
+/* columns */
+.responsive-three-column-grid > * {
+  padding:1rem;
+}
+
+/* tablet breakpoint */
+@media (min-width:768px) {
+  .responsive-three-column-grid {
+      display: grid;
+      grid-auto-rows: 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.language-select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.language-select:focus {
+  border-color: #007bff; /* Change color when focused */
+  background-color: #e9ecef;
+}
+
+.aboutHeader{
+  color: red;
+  width: 100%;
+  margin-left: 2%;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+
+/* src/App.css */
+/* src/App.css */
+.like-dislike-container {
+  display: block;
+
+
+  margin-left: 40%;
+  margin-right: auto;
+}
+
+.like-button, .dislike-button {
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.like-button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+.dislike-button {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+
+.aboutText{
+  font-size: 22px;
+  text-align: justify;
+  margin-left: 2%;
+  text-indent: 60px;
+}
+
+.meHeader{
+  color: red;
+  width: 100%;
+  margin-left: 2%;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.me{
+  font-size: 22px;
+  text-align: justify;
+  margin-left: 2%;
+}
+
+.womanH{
+  color: red;
+  width: 100%;
+  margin-left: 12%;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.womanT{
+  font-size: 22px;
+  text-align: justify;
+  margin-left: 12%;
+}
+
+.cc{
+font-weight: bolder;
+font-size: 30px;
+}
+
+.example5 {
+  height: 50px;	
+  overflow: hidden;
+  position: relative;
+ }
+ .example5 h3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: left;
+  /* Apply animation to this element */	
+  -moz-animation: example5 5s linear infinite alternate;
+  -webkit-animation: example5 5s linear infinite alternate;
+  animation: example5 5s linear infinite alternate;
+ }
+ /* Move it (define the animation) */
+ @-moz-keyframes example5 {
+  0%   { -moz-transform: translateX(70%); }
+  100% { -moz-transform: translateX(0%); }
+ }
+ @-webkit-keyframes example5 {
+  0%   { -webkit-transform: translateX(70%); }
+  100% { -webkit-transform: translateX(0%); }
+ }
+ @keyframes example5 {
+  0%   { 
+  -moz-transform: translateX(70%); /* Firefox bug fix */
+  -webkit-transform: translateX(70%); /* Firefox bug fix */
+  transform: translateX(70%); 		
+  }
+  100% { 
+  -moz-transform: translateX(0%); /* Firefox bug fix */
+  -webkit-transform: translateX(0%); /* Firefox bug fix */
+  transform: translateX(0%); 
+  }
+ }
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+
+.mar{
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.imgLink { border: none; background: none; }
+.imgLink img
+{
+  height: 8rem;
+}
+.imgLink:active img, .imgLink:focus img
+{
+  height: 16rem;
+}
+.video-container {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.video {
+  width: 50%;
+  max-width: 600px;
+}
+
+
+.image-grid {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 150px; 
+}
+
+.image-container {
+  overflow: visible; 
+  display: inline-block;
+  position: relative;
+}
+
+.zoom-image {
+  object-fit: cover; 
+  transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.image-container:hover .zoom-image {
+  transform: scale(1.5); 
+}
+
+.thumbnail-video {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.thumbnail-video:hover {
+  transform: scale(1.05);
+}
+
+.responsive-two-column-grid {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.responsive-two-column-grid div {
+  flex: 1;
+}
+
+.vdl{
+  width: 290px;
+  height: 60px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.a{
+  text-indent: 25px;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 60%;
+  margin: auto;
+  overflow: hidden; /* Ensure that images don't overflow the container */
+  border: 1px solid #ddd; /* Optional: adds a border around the slideshow */
+}
+
+.slideshow-slide img {
+  width: 400px;
+  height: auto;
+  display: block;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.6s ease;
+  z-index: 100; /* Ensure buttons are above the images */
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+
+
